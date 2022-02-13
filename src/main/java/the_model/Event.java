@@ -8,13 +8,13 @@ import the_model.event_data.*;
  * @author Nicholas Cervania
  */
 public class Event {
-	/** Time-related information */
+	/** Time-related information of the Event*/
 	private final EventTimeInfo timeInfo;
-	/** ID information */
+	/** ID-related information of the Event*/
 	private final IdentificationInformation idInfo;
-	/** File from the event */
+	/** File-related information of the Event */
 	private final File file;
-	/** diposition value */
+	/** diposition value of the Event */
 	private Diposition diposition;
 
 	/**

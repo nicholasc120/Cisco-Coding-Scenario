@@ -125,6 +125,9 @@ public class Reader {
 	 *            the name of the file.
 	 */
 	private void addToExtensionsAndNames(String extension, String fileName) {
+		if(extension == null) {
+			return;
+		}
 		if (!extensions.containsKey(extension)) {
 			HashSet<String> fileNames = new HashSet<String>();
 			fileNames.add(fileName);

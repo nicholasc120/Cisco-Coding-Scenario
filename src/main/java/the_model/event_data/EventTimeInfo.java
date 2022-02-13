@@ -38,7 +38,7 @@ public class EventTimeInfo {
 	 * 
 	 * @return the timestamp of the event
 	 */
-	public int getTimestamp() {
+	public Integer getTimestamp() {
 		return timestamp;
 	}
 
@@ -55,7 +55,7 @@ public class EventTimeInfo {
 	 * 
 	 * @return the processing time of the event
 	 */
-	public int getProcessingTime() {
+	public Integer getProcessingTime() {
 		return processingTime;
 	}
 
