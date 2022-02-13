@@ -15,7 +15,7 @@ public class App {
 				reader.parseAndSaveEvent(nextLine);
 			}
 			sc.close();
-			System.out.println(reader.getResults());
+			System.out.print(reader.getResults());
 		} catch (IndexOutOfBoundsException e) {
 			System.err.println("Error: Please supply a path name.");
 			System.exit(1);
