@@ -15,8 +15,10 @@ public class EventTimeInfo {
 	/**
 	 * Constructs a new EventTimeInfo event.
 	 * 
-	 * @param timestamp the timestamp of the event. Can be null.
-	 * @param processingTime the processing time of the event. Can be null.
+	 * @param timestamp
+	 *            the timestamp of the event. Can be null.
+	 * @param processingTime
+	 *            the processing time of the event. Can be null.
 	 */
 	public EventTimeInfo(Integer timestamp, Integer processingTime) {
 		this.timestamp = timestamp;
@@ -25,7 +27,8 @@ public class EventTimeInfo {
 
 	/**
 	 * 
-	 * @param timestamp the timestamp to set
+	 * @param timestamp
+	 *            the timestamp to set
 	 */
 	public void setTimestamp(int timestamp) {
 		this.timestamp = timestamp;
@@ -41,7 +44,8 @@ public class EventTimeInfo {
 
 	/**
 	 * 
-	 * @param processingTime the processing time
+	 * @param processingTime
+	 *            the processing time
 	 */
 	public void setProcessingTime(int processingTime) {
 		this.processingTime = processingTime;

@@ -17,11 +17,15 @@ public class IdentificationInformation {
 	/**
 	 * Construct new IdentificationInformation object
 	 * 
-	 * @param sessionID the session ID of the event
-	 * @param userUUID the User UUID of the event
-	 * @param businessUUID the business UUID of the event
+	 * @param sessionID
+	 *            the session ID of the event
+	 * @param userUUID
+	 *            the User UUID of the event
+	 * @param businessUUID
+	 *            the business UUID of the event
 	 */
-	public IdentificationInformation(String sessionID, String userUUID, String businessUUID) {
+	public IdentificationInformation(String sessionID, String userUUID,
+			String businessUUID) {
 		this.sessionID = sessionID;
 		this.userUUID = userUUID;
 		this.businessUUID = businessUUID;
@@ -29,7 +33,8 @@ public class IdentificationInformation {
 
 	/**
 	 * 
-	 * @param sessionID the session ID
+	 * @param sessionID
+	 *            the session ID
 	 */
 	public void setSessionID(String sessionID) {
 		this.sessionID = sessionID;
@@ -45,7 +50,8 @@ public class IdentificationInformation {
 
 	/**
 	 * 
-	 * @param userUUID the user UUID
+	 * @param userUUID
+	 *            the user UUID
 	 */
 	public void setUserUUID(String userUUID) {
 		this.userUUID = userUUID;
@@ -61,7 +67,8 @@ public class IdentificationInformation {
 
 	/**
 	 * 
-	 * @param businessUUID the business UUID
+	 * @param businessUUID
+	 *            the business UUID
 	 */
 	public void setBusinessUUID(String businessUUID) {
 		this.businessUUID = businessUUID;

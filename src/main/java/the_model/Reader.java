@@ -47,12 +47,12 @@ public class Reader {
 		}
 
 		try {
-			JsonObject jsonObject = JsonParser.parseString(JSON).getAsJsonObject();
-			Event event = new Event(
-					new EventTimeInfo(
-							getIntFromStr(getStringFromJsonAttribute(jsonObject, "ts")),
-							getIntFromStr(
-									getStringFromJsonAttribute(jsonObject, "pt"))),
+			JsonObject jsonObject = JsonParser.parseString(JSON)
+					.getAsJsonObject();
+			Event event = new Event(new EventTimeInfo(
+					getIntFromStr(getStringFromJsonAttribute(jsonObject, "ts")),
+					getIntFromStr(
+							getStringFromJsonAttribute(jsonObject, "pt"))),
 					new IdentificationInformation(
 							getStringFromJsonAttribute(jsonObject, "si"),
 							getStringFromJsonAttribute(jsonObject, "uu"),
@@ -93,7 +93,8 @@ public class Reader {
 	 *            the attribute whose value is being returned.
 	 * @return the value of the attribute if it exists, null otherwise.
 	 */
-	private String getStringFromJsonAttribute(JsonObject jsonObject, String attribute) {
+	private String getStringFromJsonAttribute(JsonObject jsonObject,
+			String attribute) {
 		return jsonObject.get(attribute) != null
 				? jsonObject.get(attribute).getAsString()
 				: null;
