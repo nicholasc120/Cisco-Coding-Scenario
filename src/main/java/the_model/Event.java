@@ -29,7 +29,7 @@ public class Event {
 	private Diposition dp;
 
 	/**
-	 *  
+	 * 
 	 * @param timestamp the timestamp to set
 	 */
 	public void setTimestamp(int timestamp) {
@@ -156,19 +156,13 @@ public class Event {
 		return ph;
 	}
 
-	// throw error if invalid value
-	public void setDiposition(int diposition) {
-		switch (diposition) {
-		case 1:
-			this.dp = Diposition.MALICIOUS;
-			break;
-		case 2:
-			this.dp = Diposition.CLEAN;
-			break;
-		case 3:
-			this.dp = Diposition.UNKNOWN;
-			break;
-		}
+	/**
+	 * Set the Diposition value
+	 * 
+	 * @param diposition Diposition enumeration.
+	 */
+	public void setDiposition(Diposition diposition) {
+		this.dp = diposition;
 	}
 
 	/**
@@ -176,21 +170,20 @@ public class Event {
 	 * @return the diposition enumeration
 	 */
 	public Diposition getDiposition() {
-		return dp;
+		return dp; 
 	}
 
 	/**
 	 * Use regex to find the extension of the file.
 	 * 
-	 * @return The file extension if the file has an extension.
-	 * "No extension" if the file has no extension.
-	 * Null if the file has not been set.
+	 * @return The file extension if the file has an extension. "No extension" if
+	 *         the file has no extension. Null if the file has not been set.
 	 */
 	public String getFileExtension() {
 		if (nm != null) {
 			Pattern pattern = Pattern.compile("\\.([a-zA-Z0-9]+)$");
 			Matcher matcher = pattern.matcher(nm);
-			return matcher.find() ? matcher.group(1) : "No extension";
+			return matcher.find() ? matcher.group(1) : "No Extension";
 		}
 		return null;
 	}

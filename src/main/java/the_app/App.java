@@ -12,9 +12,7 @@ public class App {
 			Reader reader = new Reader();
 			while (sc.hasNextLine()) {
 				String nextLine = sc.nextLine();
-				if (!nextLine.isBlank()) {
-					reader.parseAndSaveEvent(nextLine);
-				}
+				reader.parseAndSaveEvent(nextLine);
 			}
 			sc.close();
 			System.out.println(reader.getResults());
