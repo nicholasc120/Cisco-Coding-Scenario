@@ -16,7 +16,7 @@ public enum Diposition {
 	 *            the diposition code. Valid values are 1, 2, and 3.
 	 * @return a Diposition enum if code is valid, null otherwise.
 	 */
-	public static Diposition fromCode(Integer dp) {
+	public static Diposition fromCode(int dp) {
 		switch (dp) {
 			case 1 :
 				return MALICIOUS;

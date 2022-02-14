@@ -125,7 +125,7 @@ public class Reader {
 	 *            the name of the file.
 	 */
 	private void addToExtensionsAndNames(String extension, String fileName) {
-		if(extension == null) {
+		if (extension == null) {
 			return;
 		}
 		if (!extensions.containsKey(extension)) {

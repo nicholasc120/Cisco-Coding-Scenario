@@ -6,6 +6,13 @@ import java.util.*;
 import java.io.*;
 
 public class App {
+
+	/**
+	 * Reads a file line-by-line and outputs metrics based on file information.
+	 * 
+	 * @param args[0]
+	 *            The path to the file being read.
+	 */
 	public static void main(String[] args) {
 		if (args.length == 0) {
 			System.err.println("Error: Please supply a path name.");
